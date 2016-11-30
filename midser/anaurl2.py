@@ -69,6 +69,6 @@ def ana(urlstr,expstr,cks=None,postdata=None):
         return matlist
 
 if __name__=='__main__':
-    #resu=ana("http://www.vpngate.net/cn/","<tr>\r\n<td class='vg_table_row_([01])' style='text-align: center;'><img src='../images/flags/[A-Z]+.png' width='32' height='32' /><br>([a-zA-Z]+)</td>.*?<a href='([^']+)'><img height='33' src='../images/yes_33.png' width='33' /><br><b>OpenVPN<BR>.*?</td></tr>")
-    resu=ana("http://www.vpngate.net/cn/do_openvpn.aspx?fqdn=&ip=219.118.128.235&tcp=995&udp=1195&sid=1477224598655&hid=817201",'(/common/openvpn_download.aspx.*?\.ovpn)')
+    resu=ana("http://www.vpngate.net/cn/","<tr>\r\n<td class='vg_table_row_([01])' style='text-align: center;'><img src='../images/flags/[A-Z]+.png' width='32' height='32' /><br>([a-zA-Z]+)</td>.*?<a href='([^']+)'><img height='33' src='../images/yes_33.png' width='33' /><br><b>OpenVPN<BR>.*?</td></tr>")
+    #resu=ana("http://www.vpngate.net/cn/do_openvpn.aspx?fqdn=&ip=219.118.128.235&tcp=995&udp=1195&sid=1477224598655&hid=817201",'(/common/openvpn_download.aspx.*?\.ovpn)')
     print(resu)
