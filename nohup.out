@@ -1,0 +1,29 @@
+[2016-12-06 06:58:05,284] - Broken pipe from ('147.60.58.234', 18511)
+
+[06/Dec/2016 06:58:06] "GET /static/base64.txt HTTP/1.1" 200 318008
+[06/Dec/2016 07:15:41] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x03\x00\x9b\x01\x00\x00\x97\x03\x03XFeK\xee\xc7W\xd9R\x93L\xb3\x911d\x10\xc9\x14\xd5,>\xef\xe56\xed}\x95')
+[06/Dec/2016 07:15:41] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[06/Dec/2016 07:15:41] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00g\x01\x00\x00c\x03\x01XFeKZ\\\xb7B\xdb(')
+[06/Dec/2016 07:15:41] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[06/Dec/2016 07:15:43] code 400, message Bad request syntax ("\x16\x03\x03\x00\x9b\x01\x00\x00\x97\x03\x03XFeM\x91\x1b\xf5Q\xeb\x05\xc3D\xef\xfe\x1fb0\xf2Sd\xc5}\x9ec\xdf.\x027\xbc\x18\xd6{\x00\x004\xc0(\xc0'\xc0\x14\xc0\x13\x00\x9f\x00\x9e\x00\x9d\x00\x9c\x00=\x00<\x005\x00/\xc0,\xc0+\xc0$\xc0#\xc0")
+[06/Dec/2016 07:15:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[06/Dec/2016 07:15:43] code 400, message Bad request syntax ('\x16\x03\x01\x00g\x01\x00\x00c\x03\x01XFeM\xadz\x95\xcffc')
+[06/Dec/2016 07:15:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+
+[06/Dec/2016 07:28:25] "GET /static/base64.txt HTTP/1.1" 200 305612
+[06/Dec/2016 07:33:36] "GET /static/base64.txt HTTP/1.1" 200 305612
+[06/Dec/2016 07:33:56] "GET /static/base64.txt HTTP/1.1" 200 305612
+[06/Dec/2016 07:46:43] "GET /static/base64.txt HTTP/1.1" 200 305612
+[06/Dec/2016 07:47:18] "GET /static/base64.txt HTTP/1.1" 200 305612
+[06/Dec/2016 07:51:26] "GET /static/base64.txt HTTP/1.1" 200 305612
+[06/Dec/2016 07:54:12] "GET /static/base64.txt HTTP/1.1" 200 305612
+[06/Dec/2016 08:04:57] "GET /static/base64.txt HTTP/1.1" 200 311740
+[06/Dec/2016 09:18:05] "GET /static/base64.txt HTTP/1.1" 200 281208
+[06/Dec/2016 09:51:54] "GET /static/base64.txt HTTP/1.1" 200 281208
+Not Found: /
+[06/Dec/2016 23:52:52] "GET / HTTP/1.1" 404 2018
+[07/Dec/2016 02:31:04] "GET /static/base64.txt HTTP/1.1" 200 318140
+[07/Dec/2016 02:32:51] "GET /static/base64.txt HTTP/1.1" 200 318140
