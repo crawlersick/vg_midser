@@ -4,7 +4,7 @@
 import urllib.request
 import base64
 import os
-folder=('/storage/sdcard0/ovpnconf')
+folder=('/tmp/ovpnconf')
 try:
     os.stat(folder)
 except:
@@ -23,11 +23,11 @@ bincon=base64.b64decode(base64text)
 
 
 
-with open('/storage/sdcard0/ovpnconf/tt1122.zip','wb') as out:
+with open(folder+'/tt1122.zip','wb') as out:
     out.write(bincon)
 import zipfile
-with zipfile.ZipFile('/storage/sdcard0/ovpnconf/tt1122.zip','r') as zo:
-    zo.extractall('/storage/sdcard0/ovpnconf')
+with zipfile.ZipFile(folder+'/tt1122.zip','r') as zo:
+    zo.extractall(folder)
 
 
 print("This is console module")
