@@ -1,19 +1,8 @@
 #!/bin/bash
-#set -x
-#if [[ -z "$1" ]] 
-#then
-#tempvar=`cat .cvpn`
-#else
-#tempvar=$1
-#echo $tempvar > .cvpn
-#fi
-myname=`id -ng`
-#rm /home/john/VPN/*_TH_*
-#cp /home/john/VPN/good/* /home/john/VPN
-#trap "exit 1" INT
+echo "using <ssh -N -D 0.0.0.0:1080 localhost > to make local proxy for socks5"
 folder='/tmp/ovpnconf/tmp/ovpn/'
 rm -rf $folder/*
-python /home/john/code/vg_client/main.py
+python /home/sick/vg_midser/midser/client/main.py
 trap "break" 3
 trap "continue" 2
 
