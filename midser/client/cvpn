@@ -1,17 +1,30 @@
 #!/bin/bash
-echo "using <ssh -N -D 0.0.0.0:1080 localhost > to make local proxy for socks5"
+#set -x
+#if [[ -z "$1" ]] 
+#then
+#tempvar=`cat .cvpn`
+#else
+#tempvar=$1
+#echo $tempvar > .cvpn
+#fi
+myname=`id -ng`
+#rm /home/john/VPN/*_TH_*
+#cp /home/john/VPN/good/* /home/john/VPN
+#trap "exit 1" INT
 folder='/tmp/ovpnconf/tmp/ovpn/'
 rm -rf $folder/*
-python /home/sick/vg_midser/midser/client/main.py
+python /home/sick/code/vg_midser/midser/client/main.py
 trap "break" 3
 trap "continue" 2
+trap "continue" 10
+trap "echo exitall;exit;" SIGQUIT
 
 
 #for tempvar in `ls /home/john/VPN/*KR*.ovpn /home/john/VPN/*JP*.ovpn | sort -nr -k 2 -t "k"`
 for tempvar in `ls "$folder"Japan*.ovpn | sort -nr -k 2 -t "k"`
 do
 
-sudo openvpn --cipher CBC --tls-client --float --allow-pull-fqdn --redirect-gateway --auth-nocache --inactive 20 --ping 3 --ping-exit 21 --tls-exit --config $tempvar
+sudo openvpn --cipher CBC --tls-client --float --allow-pull-fqdn --redirect-gateway --auth-nocache --connect-retry-max 2 --inactive 20 --ping 0 --ping-exit 6 --tls-exit --config $tempvar
 #sudo openvpn --cipher CBC --tls-client --float --allow-pull-fqdn --redirect-gateway --auth-nocache --inactive 10 --ping 3 --ping-exit 21 --remote-cert-tls server --tls-exit --config $tempvar
 #sudo openvpn --cipher CBC --tls-client --float --allow-pull-fqdn --redirect-gateway --auth-nocache --inactive 35 --ping 2 --ping-exit 21 --config $tempvar
 
